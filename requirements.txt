@@ -1,25 +1,67 @@
-blis==0.7.4
-catalogue==1.0.0
-certifi==2020.12.5
-chardet==4.0.0
-click==7.1.2
-cymem==2.0.5
-Faker==6.5.0
-idna==2.10
-joblib==1.0.0
-murmurhash==1.0.5
-nltk==3.5
-numpy==1.19.5
-plac==1.1.3
-preshed==3.0.5
-python-dateutil==2.8.1
-regex==2020.11.13
-requests==2.25.1
-six==1.15.0
-spacy==2.3.5
-srsly==1.0.5
-text-unidecode==1.3
-thinc==7.4.5
-tqdm==4.54.1
-urllib3==1.26.2
-wasabi==0.8.0
+attrs==20.3.0             # via pytest
+blis==0.7.4               # via spacy, thinc
+catalogue==1.0.0          # via spacy, thinc
+category-encoders==2.2.2  # via -r requirements.in
+certifi==2020.12.5        # via requests
+chardet==3.0.4            # via requests
+click==7.1.2              # via nltk
+cycler==0.10.0            # via matplotlib
+cymem==2.0.5              # via preshed, spacy, thinc
+fastai==2.1.8             # via -r requirements.in
+fastcore==1.3.11          # via fastai
+fastprogress==1.0.0       # via fastai
+funcy==1.15               # via pyldavis
+future==0.18.2            # via pyldavis
+idna==2.10                # via requests
+imbalanced-learn==0.7.0   # via -r requirements.in
+iniconfig==1.1.1          # via pytest
+jinja2==2.11.2            # via pyldavis
+joblib==0.17.0            # via -r requirements.in, imbalanced-learn, nltk, pyldavis, scikit-learn
+kiwisolver==1.3.1         # via matplotlib
+llvmlite==0.33.0          # via numba
+markupsafe==1.1.1         # via jinja2
+matplotlib==3.3.3         # via -r requirements.in, fastai, seaborn, wordcloud
+murmurhash==1.0.5         # via preshed, spacy, thinc
+nltk==3.5                 # via textblob
+numba==0.50.1             # via shap
+numexpr==2.7.1            # via pyldavis
+numpy==1.18.4             # via -r requirements.in, blis, category-encoders, fastprogress, imbalanced-learn, matplotlib, numba, numexpr, pandas, patsy, pyldavis, scikit-learn, scipy, seaborn, shap, spacy, statsmodels, thinc, torch, torchvision, wordcloud, xgboost
+packaging==20.7           # via fastai, fastcore, pytest
+pandas==1.1.4             # via -r requirements.in, category-encoders, fastai, pyldavis, seaborn, shap, statsmodels
+patsy==0.5.1              # via category-encoders, statsmodels
+pillow==8.1.1             # via fastai, matplotlib, torchvision, wordcloud
+plac==1.1.3               # via spacy, thinc
+pluggy==0.13.1            # via pytest
+preshed==3.0.5            # via spacy, thinc
+py==1.9.0                 # via pytest
+pyldavis==2.1.2           # via -r requirements.in
+pyparsing==2.4.7          # via matplotlib, packaging
+pytest==6.1.2             # via pyldavis
+python-dateutil==2.8.1    # via matplotlib, pandas
+pytz==2020.4              # via pandas
+pyyaml==5.4               # via fastai
+regex==2020.11.13         # via nltk
+requests==2.25.0          # via fastai, spacy
+scikit-learn==0.23.2      # via category-encoders, fastai, imbalanced-learn, shap, sklearn
+scipy==1.5.4              # via -r requirements.in, category-encoders, fastai, imbalanced-learn, pyldavis, scikit-learn, seaborn, shap, statsmodels, xgboost
+seaborn==0.11.0           # via -r requirements.in
+shap==0.37.0              # via -r requirements.in
+six==1.15.0               # via cycler, patsy, python-dateutil
+sklearn==0.0              # via -r requirements.in
+slicer==0.0.3             # via shap
+spacy==2.3.4              # via fastai
+srsly==1.0.5              # via spacy, thinc
+statsmodels==0.12.1       # via category-encoders
+textblob==0.15.3          # via -r requirements.in
+thinc==7.4.4              # via spacy
+threadpoolctl==2.1.0      # via scikit-learn
+toml==0.10.2              # via pytest
+torch==1.7.1              # via fastai, torchvision
+torchvision==0.8.2        # via fastai
+tqdm==4.51.0              # via nltk, shap, spacy, thinc
+typing-extensions==3.7.4.3  # via torch
+urllib3==1.26.4           # via requests
+wasabi==0.8.0             # via spacy, thinc
+wheel==0.35.1             # via pyldavis
+wordcloud==1.8.1          # via -r requirements.in
+xgboost==1.2.0            # via -r requirements.in
